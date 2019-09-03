@@ -1,5 +1,9 @@
 package dev.georgiy.lifegame;
 
+import dev.georgiy.lifegame.beans.Point;
+import dev.georgiy.lifegame.beans.PointIntImpl;
+import dev.georgiy.lifegame.utils.RoundUtils;
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
