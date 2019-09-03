@@ -1,5 +1,8 @@
 package dev.georgiy.lifegame;
 
+import dev.georgiy.lifegame.beans.Point;
+import dev.georgiy.lifegame.beans.PointIntImpl;
+import dev.georgiy.lifegame.utils.RoundUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
