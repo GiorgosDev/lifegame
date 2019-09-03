@@ -8,6 +8,8 @@ public class PointIntImpl implements Point{
     private int x;
     private int y;
 
+    public PointIntImpl(){}
+
     public PointIntImpl(int x, int y) {
         this.x = x;
         this.y = y;
@@ -23,7 +25,7 @@ public class PointIntImpl implements Point{
         return y;
     }
 
-    public Set<Point> getNeighbourPoints() {
+    public Set<Point> listNeighbourPoints() {
         Set<Point> neighbours = new HashSet<>();
         neighbours.add(new PointIntImpl(x+1, y));
         neighbours.add(new PointIntImpl(x+1, y-1));
@@ -37,7 +39,7 @@ public class PointIntImpl implements Point{
     }
 
     public int countNeighborsInSet(Set<Point> pointsSeeded){
-        Set<Point> neighborsPresent = this.getNeighbourPoints();
+        Set<Point> neighborsPresent = this.listNeighbourPoints();
         neighborsPresent.retainAll(pointsSeeded);
         return neighborsPresent.size();
     }

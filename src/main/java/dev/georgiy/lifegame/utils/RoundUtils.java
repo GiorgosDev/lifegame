@@ -27,7 +27,7 @@ public class RoundUtils {
 
     private static Set<Point> calculateBornPoints(Set<Point> pointsSeeded) {
         Set<Point> deadNeighbors = pointsSeeded.stream()
-                .map(Point::getNeighbourPoints)
+                .map(Point::listNeighbourPoints)
                 .flatMap(Collection::stream)
                 .collect(Collectors.toSet());
         deadNeighbors.removeAll(pointsSeeded);
