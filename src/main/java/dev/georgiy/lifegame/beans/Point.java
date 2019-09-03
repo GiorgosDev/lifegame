@@ -1,4 +1,4 @@
-package dev.georgiy.lifegame;
+package dev.georgiy.lifegame.beans;
 
 import java.util.Set;
 

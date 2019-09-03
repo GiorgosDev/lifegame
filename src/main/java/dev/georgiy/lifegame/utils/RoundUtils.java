@@ -1,4 +1,6 @@
-package dev.georgiy.lifegame;
+package dev.georgiy.lifegame.utils;
+
+import dev.georgiy.lifegame.beans.Point;
 
 import java.util.Collection;
 import java.util.Set;
