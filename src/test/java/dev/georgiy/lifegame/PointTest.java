@@ -48,14 +48,14 @@ public class PointTest {
     @Test
     public void getNeighbourPointsSize(){
         PointIntImpl point = new PointIntImpl(0,1);
-        Set<Point> neighbours = point.getNeighbourPoints();
+        Set<Point> neighbours = point.listNeighbourPoints();
         Assert.assertEquals(8, neighbours.size());
     }
 
     @Test
     public void checkNeighbourPoints(){
         PointIntImpl point = new PointIntImpl(0,1);
-        Set<Point> neighbours = point.getNeighbourPoints();
+        Set<Point> neighbours = point.listNeighbourPoints();
         Assert.assertTrue(neighbours.contains(new PointIntImpl(-1,2)));
         Assert.assertTrue(neighbours.contains(new PointIntImpl(0,2)));
         Assert.assertTrue(neighbours.contains(new PointIntImpl(1,2)));
