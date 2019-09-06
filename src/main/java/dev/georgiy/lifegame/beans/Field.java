@@ -7,7 +7,17 @@ public class Field {
     int width;
     int hight;
 
-    public Set<Point> listNeighbourPoints(Point point) {
-        return new HashSet<>();
+    public Set<Point> listNeighbourPoints(PointIntImpl point) {
+        Set<Point> neighbours = new HashSet<>();
+        //todo process borders
+        neighbours.add(new PointIntImpl(point.getX()+1, point.getY()));
+        neighbours.add(new PointIntImpl(point.getX()+1, point.getY()-1));
+        neighbours.add(new PointIntImpl(point.getX()-1, point.getY()+1));
+        neighbours.add(new PointIntImpl(point.getX()-1, point.getY()));
+        neighbours.add(new PointIntImpl(point.getX()-1, point.getY()-1));
+        neighbours.add(new PointIntImpl(point.getX()+1, point.getY()+1));
+        neighbours.add(new PointIntImpl(point.getX(), point.getY()-1));
+        neighbours.add(new PointIntImpl(point.getX(), point.getY()+1));
+        return neighbours;
     }
 }

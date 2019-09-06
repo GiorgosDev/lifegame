@@ -16,12 +16,12 @@ public class PointIntImpl implements Point{
     }
 
     @Override
-    public Number getX() {
+    public Integer getX() {
         return x;
     }
 
     @Override
-    public Number getY() {
+    public Integer getY() {
         return y;
     }
 
