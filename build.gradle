@@ -16,9 +16,6 @@ apply plugin: 'org.springframework.boot'
 
 group 'life-game'
 version '1.0-SNAPSHOT'
-
-group = 'com.tutorialspoint'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
