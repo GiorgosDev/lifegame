@@ -19,4 +19,9 @@ public class LifeGameService {
         return RoundUtils.getNextGeneration(new HashSet<>(Arrays.asList(pointSet)));
     }
 
+    @RequestMapping(value = "/health")
+    public Boolean healthCheck() {
+        return true;
+    }
+
 }
